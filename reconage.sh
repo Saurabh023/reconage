@@ -145,6 +145,10 @@ echo "Filtered live ips"
 echo "-A displays the package in ASCII" tcpdump -A -i eth0
 echo "-XX capture the data of each packet" tcpdump -XX -i eth0
 
+# Hydra commands for FTP and SSH for username and password cracking
+echo "hydra -L user.txt -P pass.txt $dom ssh -t 4"
+echo "hydra -L user.txt -P pass.txt $dom ftp -t 4"
+
 fi 
 
 echo "all things is done and arranged in proper way" | figlet
