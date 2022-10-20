@@ -123,8 +123,8 @@ echo "nikto completed it's task"
 
 # Nmap command for common malware scan
 
-echo "nmap -sV --script=http-malware-host <ip address>"
-echo "nmap -p80 --script http-google-malware infectedsite.com"
+nmap -sV --script=http-malware-host $dom
+nmap -p80 --script http-google-malware $dom
 
 fi 
 
