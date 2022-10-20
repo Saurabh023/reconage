@@ -121,10 +121,10 @@ echo "nikto completed it's task"
 echo "nikto For domains with HTTPS enabled : " nikto -h $dom -ssl >> /dev/null
 echo "nikto completed it's task"
 
-# naabu for port enumeration
-echo "naabu for port enumeration : " naabu -host $dom >> /dev/null
-echo "naabu completed enumeration"
+# Nmap command for common malware scan
 
+echo "nmap -sV --script=http-malware-host <ip address>"
+echo "nmap -p80 --script http-google-malware infectedsite.com"
 
 fi 
 
